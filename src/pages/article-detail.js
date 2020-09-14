@@ -25,7 +25,9 @@ const articles = [
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.`
 
-    ]
+    ],
+    author:'Bibek Chalise'
+
   },
   {
     name:'learn-node',
@@ -50,7 +52,9 @@ const articles = [
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.`
 
-    ]
+    ],
+    author:"Samir Lamsal"
+
   },
   {
     name:'learn-django',
@@ -75,7 +79,8 @@ const articles = [
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.`
 
-    ]
+    ],
+    author:"Roshan Kshetri"
   }
 ]
 

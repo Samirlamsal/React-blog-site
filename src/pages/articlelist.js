@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 class Articlelist extends React.Component{
   render(){
     return(
-      <div className="content">
+      <div className="articlecontent">
       <h1>Article list</h1>
       {articles.map((article, key)=>(
         <div>

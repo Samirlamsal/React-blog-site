@@ -1,17 +1,27 @@
 import React, {Component} from 'react';
+import Picture from './picture';
+import {Link} from 'react-router-dom';
 
 class Homepage extends React.Component{
+
   render(){
     return(
+      <>
       <div className="content">
-        <h1>Hello, Welcome to my blogspot!</h1>
+        <h1>Producing Quality Content for Users</h1>
         <p>Lorem ipsum dolor sit amet,
-         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</p>
+         consectetur adip iscing elit, sed do eiusmod tempor inidunt ut labore et dolore magna aliqua.
+        Ut enim adm inim veniam, quis nostrud exeation ullamco laboris nisi ut aliquip exercde ea commodo
+         </p>
       </div>
+      <div className="homebuttons">
+      <button><Link to="/about">Contact Us</Link></button>
+      <button><Link to="/blog">Get Started</Link></button>
+      </div>
+      <div class="image">
+        <Picture data={require('../images/home.png')}/>
+      </div>
+      </>
     )
   }
 }

@@ -7,13 +7,16 @@ const Article = ({match}) =>{
   const article = articles.find(article=>article.name===name);
   const otherarticles = articles.filter(article=> article.name !== name);
 
+
   return(
-    <div class="content">
+    <div class="articlecontent">
+
       <h1>{article.title}</h1>
+      <h3>{article.author}</h3>
       {article.content.map((paragraph, key)=>(
         <p key={key}>{paragraph}</p>
       ))}
-      <h1>Other Articles</h1>
+      <h2>Other Articles</h2>
       <Articlelistonly articles={otherarticles}/>
     </div>
 

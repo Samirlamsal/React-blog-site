@@ -4,10 +4,8 @@ import {Link} from 'react-router-dom'
 const Articlelistonly = ({articles}) =>
 {
   return(
-
-
       articles.map((article, key)=>(
-      <div>
+      <div class="articlelistonly">
       <Link key={key} to={`/blog/${article.name}`}>{article.title}</Link>
       </div>
     )
