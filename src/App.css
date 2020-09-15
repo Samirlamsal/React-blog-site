@@ -174,4 +174,87 @@ button:hover{
 .articlelistonly{
   text-align: center;
   line-height: 4vh;
+
+}
+
+
+.articlelist{
+  display:flex;
+  margin-top: 5vh;
+  justify-content: space-around;
+  height:70vh;
+
+}
+
+
+.flexelement{
+  border-radius: 20px;
+  margin:10px;
+  width:350px;
+  background-color:#050A30;
+
+}
+
+.flexelement h2{
+  font-size: 22px;
+  text-align: left;
+  padding-left:20px;
+  color:#FF3333;
+
+}
+
+.flexelement p{
+  color:#0fd3ea;
+  text-align: left;
+  padding:20px;
+  font-size: 18px;
+  word-spacing: 0.1em;
+  line-height: 22px;
+
+}
+
+.flexelement:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.flexelement h4{
+  text-align: right;
+  color:#0fd3ea;
+  font-size: 15px;
+  word-spacing: 0.1em;
+  padding: 15px;
+
+
+
+}
+
+
+@media screen and (max-width: 920px){
+  .articlelist{
+    display:grid;
+
+  }
+
+}
+
+@media screen and (max-width:1160px){
+  img{
+    display:none;
+
+  }
+  .content{
+    width:100%;
+    margin: 10%;
+    padding:2%;
+  }
+  .homebuttons{
+    align-items: center;
+    display: flex;
+    margin: 10%;
+
+
+  }
 }

@@ -5,17 +5,18 @@ import {Link} from 'react-router-dom';
 class Articlelist extends React.Component{
   render(){
     return(
-      <div className="articlecontent">
-      <h1>Article list</h1>
+      <>
+      <div className="articlelist">
       {articles.map((article, key)=>(
-        <div>
-        <Link key={key} to={`/blog/${article.name}`}>{article.title}</Link>
-        <p>{article.content[0].substring(0, 350)}....</p>
+        <div class="flexelement">
+        <Link key={key} to={`/blog/${article.name}`}><h2>{article.title}</h2></Link>
+        <p>{article.content[0].substring(0, 200)}....</p><h4>Author : {article.author}</h4>
         </div>
       ))}
 
 
       </div>
+      </>
     )
   }
 }
